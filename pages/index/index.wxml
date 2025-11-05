@@ -1,0 +1,112 @@
+<!-- 首页图片 -->
+<image class="index-img" src="/image/shouye.jpg" mode=""/>
+<!-- 功能按钮 -->
+<view class="index-info">
+  <!-- 品牌介绍（已正确实现） -->
+  <navigator url="/pages/brand/brand" open-type="switchTab" class="info-item" >
+    <image src="/image/icon-pinpai.png" mode="aspectFill" />
+    <text>品牌介绍</text>
+  </navigator>
+  <!-- 加盟流程 -->
+  <navigator url="/pages/process/process" open-type="switchTab" class="info-item">
+    <image src="/image/icon-liu.png" mode="aspectFill" />
+    <text>加盟流程</text>
+  </navigator>
+  
+  <!-- 产品展示 -->
+  <navigator url="/pages/product/product" class="info-item">
+    <image src="/image/icon-changpin.png" mode="aspectFill" />
+    <text>产品展示</text>
+  </navigator>
+  
+  <!-- 合作热线 -->
+  <navigator url="/pages/contact/index" class="info-item"  bindtap="onPhone">
+    <image src="/image/icon-hezuorexian.png" mode="aspectFill" />
+    <text>合作热线</text>
+  </navigator>
+</view>
+
+<!-- 产品介绍  -->
+<view class="index-into">
+  <strong style="margin-left: 15px; font-weight:bold ;color:#842D1F ;font-size:20px"> | </strong>
+  <text class="into-text"> 产品介绍</text>
+    <view class="into-item">
+      <view class="into-into">
+        <image src="/image/naicha01.jpg" alt=""/>
+        <text>布蕾脆脆奶芙</text>
+      </view>
+      <view class="into-into">
+        <image src="/image/naicha02.jpg" alt=""/>
+        <text>抹茶布丁奶绿</text>
+      </view>
+      <view class="into-into">
+        <image src="/image/naicha03.jpg" alt=""/>
+        <text>龙井奶茶</text>
+      </view>
+      <view class="into-into">
+        <image src="/image/naicha04.jpg" alt=""/>
+        <text>古茗烧仙草</text>
+      </view>
+    </view>
+</view>
+<!-- 门店展示 -->
+<view class="index-store">
+  <strong style="margin-left: 15px; font-weight:bold ;color:#842D1F ;font-size:20px"> | </strong>
+  <text class="store-text"> 门店介绍</text>
+  <view class="store-item">
+      <view class="store-into">
+        <image src="/image/mendian01.jpg" alt=""/>
+        <text>广州分部门店</text>
+      </view>
+      <view class="store-into">
+        <image src="/image/mendian02.jpg" alt=""/>
+        <text>广州分部门店</text>
+      </view>
+    </view>
+</view>
+<!-- 加盟日记 -->
+<image src="/image/zhaoshang.png" mode="" class="index-zhaoshang"/>
+<view class="index-face">
+  <strong style="margin-left: 20px; font-weight:bold ;color:#842D1F ;font-size:20px"> | </strong>
+  <text class="face-text">加盟日记</text>
+  <!-- 文章列表页 -->
+  <view class="container">
+  <view class="article-list">
+    <block wx:for="{{articles}}" wx:key="id">
+      <view class="article-item" bindtap="goToDetail" data-id="{{item.id}}">
+        <text class="title">{{item.title}}</text>
+        <text class="summary">{{item.summary}}</text>
+        <view class="meta">
+          <text>{{item.date}}</text>
+          <text class="meta-text">{{item.views}}人阅读</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+</view>
+<!-- 加盟申请 -->
+<view class="index-apply">
+  <strong style="margin-left: 15px; font-weight:bold ;color:#842D1F ;font-size:20px"> | </strong>
+  <text class="apply-text">加盟申请</text>
+  <view class="apply-item">
+    <text class="label">您的姓名：</text>
+    <input class="input" placeholder="请输入姓名" bindinput="onNameInput" />
+  </view>
+  <view class="apply-item">
+    <text class="label">手机号码：</text>
+    <picker class="picker" mode="selector" range="{{areaCodes}}" range-key="name" bindchange="onAreaCodeChange">
+      <view class="picker-text">{{selectedAreaCode}}</view>
+    </picker>
+    <input class="phone-input" type="number" placeholder="请输入手机号码" bindinput="onPhoneInput" style="width: 300px;"/>
+  </view>
+  <view class="apply-item">
+    <text class="label">您的意向城市：</text>
+    <input class="input" placeholder="请输入您的意向城市" bindinput="onCityInput" />
+  </view>
+  <view class="apply-item">
+    <text class="label">留言：</text>
+    <textarea class="textarea" placeholder="请输入" bindinput="onMessageInput"></textarea>
+  </view>
+  <button class="submit-btn" bindtap="onSubmit">马上提交</button>
+</view>
