@@ -1,0 +1,32 @@
+.container {
+ 
+    padding: 20rpx;
+}
+.container>swiper {
+  white-space: pre-line; 
+  word-break: break-all;
+  min-height: 200vh;
+  overflow: visible;
+    padding: 20rpx;
+}
+
+.article-detail {
+  padding: 20rpx;
+}
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.date {
+  color: #999;
+  font-size: 24rpx;
+  margin-bottom: 30rpx;
+  display: block;
+}
+
+.content {
+  line-height: 1.6;
+}

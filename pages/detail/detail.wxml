@@ -1,0 +1,15 @@
+<view class="container">
+  <swiper current="{{currentIndex}}" bindchange="swiperChange">
+    <block wx:for="{{articles}}" wx:key="id">
+      <swiper-item>
+        <view class="article-detail">
+          <text class="title">{{item.title}}</text>
+          <text class="date">{{item.date}}  {{item.views}}阅读</text>
+          <view class="content">
+            <rich-text nodes="{{item.content}}"></rich-text>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
