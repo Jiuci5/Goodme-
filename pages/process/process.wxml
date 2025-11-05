@@ -1,0 +1,72 @@
+<!-- 加盟图片 -->
+<view class="index-process">
+  <strong style="margin-left: 15px; font-weight:bold ;color:#842D1F ;font-size:20px;"> | </strong>
+  <text class="process-text"> 加盟流程</text>
+  <view class="process-item">
+    <view class="process-into">
+      <view class="process-num">
+      01
+      </view>
+      <view class="process-tetx">
+        初步了解
+      </view>
+      <view class="text-tetx">初步了解向投资顾问询问详情，获取加盟指南</view>
+    </view>
+
+    <view class="process-into">
+      <view class="process-num">
+      01
+      </view>
+      <view class="process-tetx">
+        初步了解
+      </view>
+      <view class="text-tetx">初步了解向投资顾问询问详情，获取加盟指南</view>
+    </view>
+    <view class="process-into">
+      <view class="process-num">
+      01
+      </view>
+      <view class="process-tetx">
+        初步了解
+      </view>
+      <view class="text-tetx">初步了解向投资顾问询问详情，获取加盟指南</view>
+    </view>
+    <view class="process-into">
+      <view class="process-num">
+      01
+      </view>
+      <view class="process-tetx">
+        初步了解
+      </view>
+      <view class="text-tetx">初步了解向投资顾问询问详情，获取加盟指南</view>
+    </view>
+    
+
+  </view>
+  <image src="/image/jiamengliucheng.jpg" mode=""/>
+</view>
+<!-- 加盟申请 -->
+<view class="index-apply">
+  <strong style="margin-left: 15px; font-weight:bold ;color:#842D1F ;font-size:20px;"> | </strong>
+  <text class="apply-text">加盟日记</text>
+  <view class="apply-item">
+    <text class="label">您的姓名：</text>
+    <input class="input" placeholder="请输入姓名" bindinput="onNameInput" />
+  </view>
+  <view class="apply-item">
+    <text class="label">手机号码：</text>
+    <picker class="picker" mode="selector" range="{{areaCodes}}" range-key="name" bindchange="onAreaCodeChange">
+      <view class="picker-text">{{selectedAreaCode}}</view>
+    </picker>
+    <input class="phone-input" type="number" placeholder="请输入手机号码" bindinput="onPhoneInput" style="width: 265px;"/>
+  </view>
+  <view class="apply-item">
+    <text class="label">您的意向城市：</text>
+    <input class="input" placeholder="请输入您的意向城市" bindinput="onCityInput" />
+  </view>
+  <view class="apply-item">
+    <text class="label">留言：</text>
+    <textarea class="textarea" placeholder="请输入" bindinput="onMessageInput"></textarea>
+  </view>
+  <button class="submit-btn" bindtap="onSubmit">马上提交</button>
+</view>
