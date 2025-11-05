@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/brand/brand",
+    "pages/my/my",
+    "pages/process/process",
+    "pages/order/orders",
+    "pages/news/news",
+    "pages/sub/sub",
+    "pages/from/from",
+    "pages/detail/detail",
+    "pages/product/product"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "餐饮加盟",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#CCC",
+    "selectedColor": "#842D1F",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/image/icon-shouye.png",
+        "selectedIconPath": "/image/icon-shou.png"
+      },
+      {
+        "pagePath": "pages/brand/brand",
+        "text": "品牌介绍",
+        "iconPath": "/image/icon-pin.png",
+        "selectedIconPath": "/image/icon-pinpai.png"
+      },
+      {
+        "pagePath": "pages/process/process",
+        "text": "加盟流程",
+        "iconPath": "/image/icon-liucheng.png",
+        "selectedIconPath": "/image/icon-liu.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/image/icon-our.png",
+        "selectedIconPath": "/image/icon-my.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
