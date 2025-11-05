@@ -1,0 +1,108 @@
+<view class="container">
+  <view class="form-content">
+    <!-- 第一页内容 -->
+    <block wx:if="{{currentPage === 1}}">
+      <view class="form-item">
+        <text class="form-label">请输入单行文本</text>
+      </view>
+      
+      <view class="divider"></view>
+      
+      <view class="form-item">
+        <text class="form-label">单选按钮</text>
+        <view class="form-value">选项一</view>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">多选按钮</text>
+        <view class="form-value">选项一 选项二</view>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">请输入多行文本</text>
+        <view class="form-value">拖拽式，3分钟制作专属小程序</view>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">请上传文件</text>
+        <view class="form-value">图片上传成功，点击预览</view>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">请输入日期时间</text>
+        <view class="form-value">2019.5.1</view>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">请输入手机号码</text>
+        <view class="form-value">13000000000</view>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">下拉选项</text>
+      </view>
+    </block>
+    
+    <!-- 第二页内容 -->
+    <block wx:if="{{currentPage === 2}}">
+      <view class="form-item">
+        <text class="form-label">请输入单行文本</text>
+      </view>
+      
+      <view class="divider"></view>
+      
+      <view class="form-item">
+        <text class="form-label">单选按钮</text>
+        <view class="form-value bold">选项一</view>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">多选按钮</text>
+        <view class="form-value">
+          <text class="bold">选项一</text>
+          <text class="bold">选项二</text>
+        </view>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">请输入多行文本</text>
+        <view class="form-value bold">拖拽式，3分钟制作专属小程序</view>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">请上传文件</text>
+        <view class="form-value bold">视频上传成功</view>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">请输入日期时间</text>
+        <view class="form-value">2019.5.1</view>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label">请输入手机号码</text>
+        <view class="form-value">13000000000</view>
+      </view>
+      
+      <view class="form-item">
+        <text class="form-label bold">下拉选项</text>
+      </view>
+    </block>
+  </view>
+  
+  <view class="pagination">
+    <view class="page-btn" bindtap="switchPage" data-direction="prev" wx:if="{{currentPage > 1}}">
+      <image src="/image/right.png" mode="aspectFit"></image>
+    </view>
+    <view class="page-btn" bindtap="switchPage" data-direction="next" wx:if="{{currentPage < totalPages}}">
+      <image src="/image/right.png" mode="aspectFit"></image>
+    </view>
+    <view class="page-info">{{currentPage}} / {{totalPages}}</view>
+    <view class="page-btn" bindtap="switchPage" data-direction="prev" wx:if="{{currentPage > 1}}">
+      <image src="/image/left.png" mode="aspectFit"></image>
+    </view>
+    <view class="page-btn" bindtap="switchPage" data-direction="next" wx:if="{{currentPage < totalPages}}">
+      <image src="/image/left.png" mode="aspectFit"></image>
+    </view>
+  </view>
+</view>
