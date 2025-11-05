@@ -1,0 +1,32 @@
+.product-item{
+  height: 1450px;
+}
+.product-into{
+  margin: 0 auto;
+  width: 320px;
+  height: 350px;
+  border-bottom: 2rpx solid rgb(0, 0, 0);
+  
+}
+.product-into>image{
+  float: left;
+}
+.product-into>text{
+  margin-left:20px ;
+}
+.product-jiage{
+  color: #842D1F;
+  font-size: 20px;
+  display: block;
+  margin: 20px 0 0 15px;
+  width: 100px;
+}
+.product-into>button{
+  width:150px;
+  border-radius: 50px;
+  display: block;
+  bottom: 30px;
+  background-color: #842D1F;
+  color: white;
+  float: right;
+}

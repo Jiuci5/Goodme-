@@ -1,0 +1,26 @@
+<view class="product-item">
+      <view class="product-into">
+        <image src="/image/naicha01.jpg" alt=""/>
+        <text>布蕾脆脆奶芙</text>
+        <view class="product-jiage">价格面议</view>
+        <button  bindtap="onSubmit">立刻申请</button>
+      </view>
+      <view class="product-into">
+        <image src="/image/naicha02.jpg" alt=""/>
+        <text>抹茶布丁奶绿</text>
+        <view class="product-jiage">价格面议</view>
+        <button  bindtap="onSubmit">立刻申请</button>
+      </view>
+      <view class="product-into">
+        <image src="/image/naicha03.jpg" alt=""/>
+        <text>龙井奶茶</text>
+        <view class="product-jiage">价格面议</view>
+        <button  bindtap="onSubmit">立刻申请</button>
+      </view>
+      <view class="product-into">
+        <image src="/image/naicha04.jpg" alt=""/>
+        <text>古茗烧仙草</text>
+        <view class="product-jiage">价格面议</view>
+        <button bindtap="onSubmit">立刻申请</button>
+      </view>
+    </view>
