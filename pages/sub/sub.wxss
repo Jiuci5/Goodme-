@@ -1,0 +1,60 @@
+.container {
+  padding: 20rpx;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  font-size: 36rpx;
+  font-weight: bold;
+  border-bottom: 1rpx solid #eee;
+  margin-bottom: 20rpx;
+}
+
+.back {
+  margin-right: 20rpx;
+}
+
+.subscription-item {
+  border: 1rpx solid #eee;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.order-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.status {
+  color: #07C160;
+}
+
+.divider {
+  height: 1rpx;
+  background-color: #eee;
+  margin: 15rpx 0;
+}
+
+.service-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.service-name {
+  font-weight: bold;
+}
+
+.service-price {
+  color: #f40;
+  font-weight: bold;
+}
+
+.time-info {
+  color: #666;
+  font-size: 24rpx;
+}

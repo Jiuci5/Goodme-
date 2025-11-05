@@ -1,0 +1,36 @@
+<view class="container">
+
+  <view class="subscription-list">
+    <view class="subscription-item">
+      <view class="order-info">
+        <text>订单号：201912121730</text>
+        <text class="status">交易成功</text>
+      </view>
+      <view class="divider"></view>
+      <view class="service-info">
+        <text class="service-name">小程序服务（示例数据）</text>
+        <text class="service-price">¥1.01 元</text>
+      </view>
+      <view class="divider"></view>
+      <view class="time-info">
+        <text>订阅时间：2019-12-12 17:30:00</text>
+      </view>
+    </view>
+    
+    <view class="subscription-item">
+      <view class="order-info">
+        <text>订单号：201912111078</text>
+        <text class="status">交易成功</text>
+      </view>
+      <view class="divider"></view>
+      <view class="service-info">
+        <text class="service-name">小程序服务（示例数据）</text>
+        <text class="service-price">¥1.02 元</text>
+      </view>
+      <view class="divider"></view>
+      <view class="time-info">
+        <text>订阅时间：2019-12-11 10:78:00</text>
+      </view>
+    </view>
+  </view>
+</view>
