@@ -1,0 +1,48 @@
+<view class="my">
+  <view class="my-header">
+    <image src="/image/icon-touxiang.png" mode=""/>
+  </view>
+  <view class="my-item">
+    <view class="my-order">
+      <view class="order-section" bindtap="navigateToAllOrders">
+        <text>所有订单</text>
+        <text class="arrow">></text>
+      </view>
+      <view class="order-status">
+        <view class="status-item" bindtap="navigateToOrders" data-status="待支付" style=" margin-left:15px ;" >
+        <image src="/image/icon-daizhif.png" mode=""/>
+          <text>待支付</text>
+        </view>
+        <view class="status-item" bindtap="navigateToOrders" data-status="进行中">
+          <image src="/image/icon-jinxingzhong.png" mode=""/>
+          <text>进行中</text>
+        </view>
+        <view class="status-item" bindtap="navigateToOrders" data-status="已完成">
+          <image src="/image/icon-yiwancheng.png" mode=""/>
+          <text>已完成</text>
+        </view>
+        <view class="status-item" bindtap="navigateToOrders" data-status="已取消">
+          <image src="/image/icon-yiquxiao.png" mode=""/>
+          <text>已取消</text>
+        </view>
+        <view class="status-item" bindtap="navigateToOrders" data-status="售后中">
+          <image src="/image/icon-shouhouzhong.png" mode="" />
+          <text>售后中</text>
+        </view>
+      </view>
+    </view>
+    <view class="section" bindtap="navigateToNews">
+      <text class="section-title">最新消息</text>
+    </view>
+    <view class="section" bindtap="navigateToSubscription">
+      <text class="section-title">我的订阅</text>
+    </view>
+    <view class="section" bindtap="navigateToForm" >
+      <text class="section-title">我的表单</text>
+    </view>
+    <view class="section" bindtap="showPhone" style="border-radius: 10px;">
+      <text class="section-title" >123456789101</text>
+    </view>
+  </view>
+  <button bindtap="showLogo">退出登陆</button>
+</view>

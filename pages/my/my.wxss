@@ -1,0 +1,82 @@
+.my {
+  height: 639px;
+  font-size: 28rpx;
+  background-color:#F4F4F4;
+}
+.my-order {
+  margin-bottom: 30rpx;
+}
+.my-header{
+  width: 100%;
+  height: 150px;
+  border-radius: 0 0 20px 20px;
+  background-color: #842D1F;
+  display: flex;
+}
+.my-header>image{
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.my-item{
+  border-radius: 10px;
+  background-color:white;
+  width: 90%;
+  margin: 0 auto;
+}
+.order-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #eee;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+.order-section>text{
+  margin-left: 20px;
+  font-weight: bold;
+}
+.arrow {
+  color: #999;
+  margin-right: 20px;
+}
+.order-status {
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.status-item {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  float: left;
+  flex: 1;
+}
+.status-item>image{
+  padding-left: 5px;
+  float: left;
+  width:30px;
+  height: 30px;
+}
+.status-item>text{
+  float: left;
+}
+.section {
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.section-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 5rpx;
+  display: block;
+}
+button{
+  border: 1px solid;
+  border-radius: 50px;
+  display: block;
+  top: 40px;
+}
