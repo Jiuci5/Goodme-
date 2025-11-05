@@ -1,0 +1,58 @@
+<!-- 加盟图片 -->
+<view class="index-brand">
+  <strong style="margin-left: 15px; font-weight:bold ;color:#842D1F ;font-size:20px;"> | </strong>
+  <text class="brand-text"> 品牌介绍</text>
+  <view class="text-into">
+    <view class="text-item">浙南小镇，几个平凡的年轻人，一拍即合，决定让喝茶这件事彻底融入日常。随时随地，只要你想， 都可以拿起茶就喝，每天一杯喝不腻。就是2010年古茗品牌诞生的初衷。</view>
+    <view class="text-item">古茗期待打造一种极致日常化的喝茶体验，让每一个平凡的人，都能通过喝茶感受、享受当下，并且过得更开心，变得更好。日常化，绝不是快速与随便的。</view>
+    <view class="text-item">希望每一天的古茗茶饮，都能被喝出品质、细节，甚至是奇思妙想的惊喜。 每一杯古茗，都是“Have a good day!”的鼓励</view>
+  </view>
+  <view class="brand-tup">
+    <view class="tup-item">
+    <image src="/image/brand-linian.png" mode=""/>
+      <view class="tup-i"> | </view>
+    <view class="tup-into">
+      零添加、零防腐、零氧化，追求万物总有平衡的价值理念，纯天然纯手工茶饮文化。
+    </view>
+    </view>
+    <view class="tup-item">
+      <image src="/image/brand-mubial.png" mode=""/>
+      <view class="tup-i"> | </view>
+    <view class="tup-into">
+      “全程手工坚持和0氧化”为工作导向，致力于实现“中国奶茶第一品牌”这一宏伟事业。
+    </view>
+    </view>
+    <view class="tup-item">
+      <image src="/image/brand-yuanjing.png" mode=""/>
+      <view class="tup-i"> | </view>
+    <view class="tup-into">
+      寻找全世界的优质食材，通过古茗之手，调成一杯可以每天消费，不会喝腻的高性价比产品。
+    </view>
+    </view>
+  </view>
+</view>
+<!-- 加盟申请 -->
+<view class="index-apply">
+  <strong style="margin-left: 15px; font-weight:bold ;color:#842D1F ;font-size:20px;"> | </strong>
+  <text class="apply-text">加盟日记</text>
+  <view class="apply-item">
+    <text class="label">您的姓名：</text>
+    <input class="input" placeholder="请输入姓名" bindinput="onNameInput" />
+  </view>
+  <view class="apply-item">
+    <text class="label">手机号码：</text>
+    <picker class="picker" mode="selector" range="{{areaCodes}}" range-key="name" bindchange="onAreaCodeChange">
+      <view class="picker-text">{{selectedAreaCode}}</view>
+    </picker>
+    <input class="phone-input" type="number" placeholder="请输入手机号码" bindinput="onPhoneInput" style="width: 265px;"/>
+  </view>
+  <view class="apply-item">
+    <text class="label">您的意向城市：</text>
+    <input class="input" placeholder="请输入您的意向城市" bindinput="onCityInput" />
+  </view>
+  <view class="apply-item">
+    <text class="label">留言：</text>
+    <textarea class="textarea" placeholder="请输入" bindinput="onMessageInput"></textarea>
+  </view>
+  <button class="submit-btn" bindtap="onSubmit">马上提交</button>
+</view>
