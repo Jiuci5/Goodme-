@@ -1,0 +1,39 @@
+.container {
+  padding: 20rpx;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  font-size: 36rpx;
+  font-weight: bold;
+  border-bottom: 1rpx solid #eee;
+  margin-bottom: 20rpx;
+}
+
+.back {
+  margin-right: 20rpx;
+}
+
+.news-item {
+  padding: 20rpx;
+  border: 1rpx solid #eee;
+  border-radius: 10rpx;
+}
+
+.news-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.news-content {
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.news-comment {
+  color: #07C160;
+  font-style: italic;
+}

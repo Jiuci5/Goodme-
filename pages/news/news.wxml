@@ -1,0 +1,6 @@
+
+  <view class="news-item">
+    <view class="news-title">小程序服务（示例数据）</view>
+    <view class="news-content">专业提供微信小程序管理、设计服务</view>
+    <view class="news-comment">专业！服务好！（示例数据）</view>
+  </view>
